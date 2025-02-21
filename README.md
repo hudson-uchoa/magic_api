@@ -313,14 +313,14 @@ php -S localhost:8000 -t public
 
 ```json
 {
-  "name_pt": "Nome em Português",
-  "name_en": "Name in English",
-  "color": "Cor da Carta",
-  "type": "Tipo da Carta",
-  "artist": "Nome do Artista",
-  "rarity": "Raridade",
-  "image": "URL da Imagem",
-  "description": "Descrição da Carta",
+  "name_pt": "Leão da Sabana",
+  "name_en": "Savannah Lion",
+  "color": "white",
+  "type": "Creature — Cat",
+  "artist": "Mark Poole",
+  "rarity": "Uncommon",
+  "image": "https://cards.scryfall.io/large/front/1/2/12345678-1234-1234-1234-123456789abc.jpg?1591472119",
+  "description": "Leão da Sabana é uma criatura com força 2 e resistência 1. Ele custa 1 mana branca para ser conjurado.",
   "price": 10.5,
   "stock": 5,
   "edition_id": 2
@@ -382,17 +382,17 @@ php -S localhost:8000 -t public
 
 ```json
 {
-  "name_pt": "Nome em Português Atualizado",
-  "name_en": "Updated Name in English",
-  "color": "Cor da Carta Atualizada",
-  "type": "Tipo da Carta Atualizado",
-  "artist": "Nome do Artista Atualizado",
-  "rarity": "Raridade Atualizada",
-  "image": "URL da Imagem Atualizada",
-  "description": "Descrição da Carta Atualizada",
-  "price": 15.0,
-  "stock": 10,
-  "edition_id": 2
+   "name_pt": "Cavaleiro de Urza",
+   "name_en": "Urza's Knight",
+   "color": "Colorless",
+   "type": "Artifact Creature",
+   "artist": "Adam Paquette",
+   "rarity": "Uncommon",
+   "image": "https://cards.scryfall.io/large/front/1/c/1c4c5f8b-c365-4289-8a6d-818149b30d56.jpg?1591472119",
+   "description": "Cavaleiro de Urza tem vínculo com a vida. Sempre que você conjura um feitiço, Cavaleiro de Urza ganha +1/+1 até o final do turno.",
+   "price": 10,
+   "stock": 20,
+   "edition_id": 2
 }
 ```
 
@@ -472,10 +472,10 @@ php -S localhost:8000 -t public
 
 ```json
 {
-  "name_pt": "Nome em Português",
-  "name_en": "Name in English",
-  "release_date": "Data de Lançamento (AAAA-MM-DD)",
-  "card_count": "Quantidade de Cartas"
+   "name_pt": "Cimentos",
+   "name_en": "Foundations",
+   "release_date": "2024-11-15",
+   "card_count": 281
 }
 ```
 
@@ -527,10 +527,10 @@ php -S localhost:8000 -t public
 
 ```json
 {
-  "name_pt": "Novo Nome em Português",
-  "name_en": "New Name in English",
-  "release_date": "Nova Data de Lançamento (AAAA-MM-DD)",
-  "card_count": "Nova Quantidade de Cartas"
+   "name_pt": "Cimentos",
+   "name_en": "Foundations",
+   "release_date": "2024-11-15",
+   "card_count": 281
 }
 ```
 
