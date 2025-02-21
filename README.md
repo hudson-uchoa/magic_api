@@ -6,7 +6,7 @@
 
 # Descrição
 
-API desenvolvida como parte do teste técnico para a empresa <a href="https://www.ligamagic.com.br/?adLink=GS19760009189&gad_source=1&gclid=Cj0KCQiAwtu9BhC8ARIsAI9JHakcgR7dxrRJXblzbjO-A0bX0lYNG0SnQW5nT9y2NjVhoK3UvBfNGVIaAsipEALw_wcB" target="_blank">Liga Magic</a>, seguindo o padrão RESTful e utilizando o **Slim Framework**. O projeto foi implementado em **2 horas, 57 minutos e 42 segundos**, atendendo aos requisitos definidos, como:
+API desenvolvida como parte da prova técnica para a empresa <a href="https://www.ligamagic.com.br/?adLink=GS19760009189&gad_source=1&gclid=Cj0KCQiAwtu9BhC8ARIsAI9JHakcgR7dxrRJXblzbjO-A0bX0lYNG0SnQW5nT9y2NjVhoK3UvBfNGVIaAsipEALw_wcB" target="_blank">Liga Magic</a>, seguindo o padrão RESTful e utilizando o **Slim Framework**. O projeto foi implementado em **2 horas, 57 minutos e 42 segundos**, atendendo aos requisitos definidos, como:
 
 - Autenticação via JWT, permitindo login e logout.
 - Cadastro e gerenciamento de edições do jogo Magic: The Gathering, incluindo nome, data de lançamento e quantidade de cartas.
@@ -576,3 +576,12 @@ php -S localhost:8000 -t public
 - **Middleware**:
 - - _AuthMiddleware_
     O grupo de rotas de Edições é protegido pelo middleware AuthMiddleware, permitindo o acesso apenas a usuários autenticados.
+  ---
+
+# Considerações Finais
+
+Este projeto foi uma excelente oportunidade para colocar em prática meus conhecimentos em **Slim Framework**, **MySQL**, **Redis** e containers **Docker**. Durante o desenvolvimento, apliquei as melhores práticas, como **Programação Orientada a Objetos (POO)** e **Injeção de Dependências (PHP-DI)**, para garantir um código modular e de fácil manutenção. A utilização de **JWT** para autenticação e **Redis** para cache contribuiu diretamente para a segurança e performance da API.
+
+Outro ponto importante foi o aprimoramento das minhas habilidades com **Docker**, especialmente ao configurar o **MySQL** e o **Redis** em containers. Isso me proporcionou um ambiente de desenvolvimento mais isolado e controlado, além de reforçar meu conhecimento em ambientes de contêiner.
+
+Agradeço a oportunidade de participar deste teste técnico, que foi muito enriquecedor e me proporcionou uma ótima chance de mostrar minha capacidade em desenvolver soluções eficientes e escaláveis. Fico à disposição para eventuais dúvidas ou ajustes, e espero poder colaborar com a <a href="https://www.ligamagic.com.br/?adLink=GS19760009189&gad_source=1&gclid=Cj0KCQiAwtu9BhC8ARIsAI9JHakcgR7dxrRJXblzbjO-A0bX0lYNG0SnQW5nT9y2NjVhoK3UvBfNGVIaAsipEALw_wcB" target="_blank">Liga Magic</a> em futuras oportunidades.
