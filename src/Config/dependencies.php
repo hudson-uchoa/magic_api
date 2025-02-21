@@ -54,7 +54,7 @@ $containerBuilder->addDefinitions([
         return new Card($c->get(PDO::class));
     },
     Edition::class => function (ContainerInterface $c) {
-        return new Edition($c->get(PDO::class));
+        return new Edition($c->get(PDO::class), $c->get(RedisClient::class));
     },
     AuthController::class => function (ContainerInterface $c) {
         return new AuthController($c->get( User::class), $c->get(RedisClient::class));

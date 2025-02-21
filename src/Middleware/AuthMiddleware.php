@@ -28,26 +28,26 @@ class AuthMiddleware
         $authHeader = $request->getHeaderLine('Authorization');
 
         if (!$authHeader || !preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
-            return $this->unauthorizedResponse($handler->handle($request));
+            return $this->unauthorizedResponse();
         }
 
         $jwt = $matches[1];
 
         if ($this->redis->exists("blacklist:$jwt")) {
-            return ResponseHelper::jsonResponse(['error' => 'Token revogado'], 401);
+            return $this->unauthorizedResponse();
         }
 
         try {
             $decoded = JWT::decode($jwt, new Key($this->jwtSecret, $this->jwtAlgo));
             $request = $request->withAttribute('user', $decoded);
         } catch (\Exception $e) {
-            return $this->unauthorizedResponse($handler->handle($request));
+            return $this->unauthorizedResponse();
         }
 
         return $handler->handle($request);
     }
 
-    private function unauthorizedResponse(Response $response): Response
+    private function unauthorizedResponse(): Response
     {
         return ResponseHelper::jsonResponse(['error' => 'Acesso não autorizado'], 401);
     }
